@@ -1,0 +1,242 @@
+html{
+    background-color:rgb(139, 106, 167);
+
+}
+
+body {
+    top:0 auto;
+    margin: 0 auto;
+
+    
+}
+
+
+h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+p {
+    color : rgb(223, 144, 223) ;
+    width :500px ;
+    font-size: large;   
+    text-align: center;
+    margin-left: 710px;
+    
+}
+
+
+nav ul{
+
+    display: flex;
+    list-style: none;
+    width: 500px;
+    margin-left:0px;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color:#764685;
+    padding: 0.5rem 0;
+    font-family: cursive;
+    border-radius: 5px;
+    text-decoration: underline;
+  }
+  
+
+
+section.top-page {
+    background:url('images/cake1.jpg') ;
+    background-size: cover;
+    height: 500px;
+
+}
+
+.menu{
+  height: 800px;
+  width: 800px;
+  
+
+}
+.defile img{
+ width:340px;
+ display: flex;
+ 
+ margin-left: 250px;
+}
+.defile{
+  
+  display: flex;
+  width:3600;
+ 
+ /* animation-duration: 15s;
+  animation-name:changeimag;
+  animation-iteration-count: infinite;
+  */
+}
+/*
+@-webkit-keyframes changeimag{
+  0%{left:0px;}
+  20%{left: 0px;}
+  50%{left:400px;}
+  70%{left :1000px;}
+  80%{left:0px;}
+  100%{left:0px;}
+}*/
+section.mid-page{
+    background-color: rgb(166, 163, 167);
+
+}
+
+section.footer{
+    display: flex;
+    background-color: #764685;
+    margin-left:0px;
+    width: 300px;
+    text-align:right;
+    
+}
+
+header img {
+    width: 100px;
+    align-items: left;
+}
+
+
+/*Pierre*/
+
+
+.container {
+  padding: 1rem;
+}
+
+.product {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  background-color: white; /* Fond cases des produits */
+}
+
+.product:hover {
+  transform: scale(1.025);
+}
+
+.product img {
+  max-width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.product button {
+  background-color: #295ae0;
+  border: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: "Pacifico", cursive;
+}
+
+.product button:hover {
+  background-color: #124992;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+h3 {
+  color: black;
+  text-decoration: underline;
+  text-decoration-color: black;
+}
+
+#products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  justify-items: center;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  width: 85%;
+  max-width: none;
+  max-height: none;
+}
+
+.product h3,
+.product p,
+.product button {
+  margin: 0.65rem 0;
+}
+
+.product h3 {
+  color: black;
+  text-decoration: underline;
+  text-decoration-color: black;
+  font-family: "Pacifico", cursive; /*police Pacifico titres des produits */
+}
+
+.popup-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#confirm-btn {
+  background-color: #28a745;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#confirm-btn:hover {
+  background-color: #218838;
+}

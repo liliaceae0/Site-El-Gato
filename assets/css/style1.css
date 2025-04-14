@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+    
+.form-container {
+    border: 3px solid red !important; /* À retirer après vérification */
+}
+
+body {
+    background: blue !important; /* À retirer après vérification */
+}
+
+body {
+        font-family: 'Poppins', cursive, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background: linear-gradient(135deg, #8dcdf8, #9b59b6);
+        min-height: 100vh;
+        background-size: cover;
+    }
+
+    .form-container {
+        background: white;
+        border-radius: 20px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+        width: 100%;
+        max-width: 600px;
+        margin: 2rem auto;
+        box-sizing: border-box;
+    }
+
+    h1 {
+        text-align: center;
+        color: #9b59b6;
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+        color: #9b59b6;
+    }
+
+    input, select {
+        width: 100%;
+        padding: 0.8rem;
+        margin-bottom: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    input:focus, select:focus {
+        outline: none;
+        border-color: #9b59b6;
+        box-shadow: 0 0 5px rgba(155, 89, 182, 0.5);
+    }
+
+    #expedition-fields {
+        margin-top: 1.5rem;
+        padding-top: 1.5rem;
+        border-top: 1px dashed #9b59b6;
+    }
+
+    button[type="submit"] {
+        background: #9b59b6;
+        color: white;
+        font-weight: bold;
+        padding: 0.8rem;
+        border: none;
+        border-radius: 8px;
+        width: 100%;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+
+    button[type="submit"]:hover {
+        background: #8e44ad;
+        transform: translateY(-2px);
+    }
+
+    .error {
+        border: 1px solid red !important;
+    }
+
+    .error-message {
+        color: red;
+        font-size: 0.8rem;
+        margin-top: -0.5rem;
+        margin-bottom: 0.5rem;
+        display: block;
+    }
+
+    #popup {
+        position: fixed;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #9b59b6;
+        color: white;
+        padding: 1rem 2rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        z-index: 1000;
+        display: none;
+        animation: fadeIn 0.3s ease-out;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; top: 0; }
+        to { opacity: 1; top: 20px; }
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+        .form-container {
+            padding: 1.5rem;
+            margin: 1rem;
+        }
+        
+        h1 {
+            font-size: 1.5rem;
+        }
+    }
